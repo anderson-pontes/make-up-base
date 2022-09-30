@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Make Up Catalog</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Make Up Catalog</h1>
+    </header>
+    <main>
+      <form class="catalog-control">
+        <div class="form-control">
+          <label for="filter-name">Nome:</label>
+          <!-- <input type="text" id="filter-name" value="" onchange="filtrarName()"/> -->
+          <input type="text" id="filter-name" value="" onchange="filtrarCatalogo()"/>
+        </div>
+        <div class="form-control">
+          <label for="filter-brand">Marca:</label>
+          <!-- <select id="filter-brand" onchange="filtrarMarcas(this)"></select> -->
+          <select id="filter-brand" onchange="filtrarCatalogo(this)"></select>
+        </div>
+        <div class="form-control">
+          <label for="filter-type">Tipo:</label>
+          <!-- <select id="filter-type" onchange="filtrarTipo(this)"></select> -->
+          <select id="filter-type" onchange="filtrarCatalogo(this)"></select>
+        </div>
+        <div class="form-control">
+          <label for="sort"></label>
+          <!-- <select id="sort-type" onchange="filtrarClassificacao()"> -->
+          <select id="sort-type" onchange="filtrarCatalogo()">
+            <option>Melhor Avaliados</option>
+            <option>Menores Preços</option>
+            <option>Maiores Preços</option>
+            <option>A-Z</option>
+            <option>Z-A</option>
+          </select>
+        </div>
+      </form>
+      <section id="catalog">
+        <!-- <div
+          class="product"
+          data-name="NYX Mosaic Powder Blush Paradise"
+          data-brand="nyx"
+          data-type="bronzer"
+          tabindex="508"
+        >
+          <figure class="product-figure">
+            <img
+              src="https://d3t32hsnjxo7q6.cloudfront.net/i/deedb7bd74bda43f062a09aab2ee1ec8_ra,w158,h184_pa,w158,h184.png"
+              width="215"
+              height="215"
+              alt="NYX Mosaic Powder Blush Paradise"
+              onerror="javascript:this.src='img/unavailable.png'"
+            />
+          </figure>
+          <section class="product-description">
+            <h1 class="product-name">NYX Mosaic Powder Blush Paradise</h1>
+            <div class="product-brands">
+              <span class="product-brand background-brand">Nyx</span>
+              <span class="product-brand background-price">R$ 57.70</span>
+            </div>
+          </section>
+          <section class="product-details">
+            <div class="details-row">
+              <div>Brand</div>
+              <div class="details-bar">
+                <div class="details-bar-bg" style="width: 250px">nyx</div>
+              </div>
+            </div>
+            <div class="details-row">
+              <div>Price</div>
+              <div class="details-bar">
+                <div class="details-bar-bg" style="width: 250px">10.49</div>
+              </div>
+            </div>
+            <div class="details-row">
+              <div>Rating</div>
+              <div class="details-bar">
+                <div class="details-bar-bg" style="width: 250px">5</div>
+              </div>
+            </div>
+            <div class="details-row">
+              <div>Category</div>
+              <div class="details-bar">
+                <div class="details-bar-bg" style="width: 250px"></div>
+              </div>
+            </div>
+            <div class="details-row">
+              <div>Product_type</div>
+              <div class="details-bar">
+                <div class="details-bar-bg" style="width: 250px">bronzer</div>
+              </div>
+            </div>
+          </section>
+        </div> -->
+      </section>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
+</html>
